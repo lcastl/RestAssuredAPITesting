@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="/Users/luis.castellanos/automation/training/RestAssuredAPITesting">
+<suite name="RestAssuredSuite">
+    <listeners>
+        <listener class-name="utils.Listeners"/>
+    </listeners>
+    <test thread-count="5" name="RestAssuredTests" >
         <classes>
-            <class name="APItestsuite.Tc001GetRequest"/>
-            <class name="APItestsuite.Tc002PostRequest"/>
+            <class name="testcases.Tc001GetAllEmployees"/>
+            <class name="testcases.Tc002GetSingleEmployeeRecord"/>
+            <class name="testcases.Tc003PostEmployeeRecord"/>
+            <class name="testcases.TC004PutEmployeeRecord"/>
+            <class name="testcases.Tc005DeleteEmployeeRecord"/>
         </classes>
     </test>
 </suite>

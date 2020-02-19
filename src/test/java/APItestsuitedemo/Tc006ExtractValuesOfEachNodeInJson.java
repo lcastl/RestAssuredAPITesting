@@ -1,4 +1,4 @@
-package APItestsuite;
+package APItestsuitedemo;
 
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
